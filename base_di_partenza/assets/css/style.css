@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* margin: auto; */
+}
+
+/*header nav {
+  display: flex;
+} */
+
+/* FONT DELL'HEADER */
+header {
+  font-family: "Spectral", serif;
+  font-weight: 400; /*normal*/
+
+  background-color: #ffc017;
+}
+
+/* FONT TITOLO HEADER */
+header h1 {
+  font-family: "Spectral", serif;
+  font-weight: 700; /* Grassetto */
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* LISTA MENU */
+nav ul {
+  list-style-type: none;
+  padding: 0; /* Rimuove il padding predefinito */
+  margin: 0; /* Rimuove il margine predefinito */
+}
+
+/* BOTTONE */
+nav ul li button {
+  background-color: #191919;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px; /* Spaziatura per il bottone */
+}
+
+nav ul li {
+  display: inline-block; /* Allinea gli elementi sulla stessa riga */
+  margin-right: 20px; /* Aggiunge spazio tra gli elementi */
+}
+
+hr {
+  color: #191919;
+}
+
+.header2 {
+  display: flex;
+}
