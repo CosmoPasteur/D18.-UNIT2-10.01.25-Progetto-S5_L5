@@ -25,11 +25,14 @@ header {
 header h1 {
   font-family: "Spectral", serif;
   font-weight: 700; /* Grassetto */
+  font-size: 5em;
 }
 
 header nav {
   display: flex;
   justify-content: space-around;
+  border-bottom: 1px solid #191919;
+  padding-block: 4px;
 }
 
 /* LISTA MENU */
@@ -52,10 +55,23 @@ nav ul li {
   margin-right: 20px; /* Aggiunge spazio tra gli elementi */
 }
 
-hr {
-  color: #191919;
-}
-
+/* SECONDA PARTE DELL'HEADER */
 .header2 {
   display: flex;
+  /* justify-content: flex-end; */
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #191919;
+}
+
+.headerSx p {
+  font-size: 1.35rem;
+  padding-block: 3rem;
+}
+
+.headerSx button {
+  background-color: #191919;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px; /* Spaziatura per il bottone */
 }
