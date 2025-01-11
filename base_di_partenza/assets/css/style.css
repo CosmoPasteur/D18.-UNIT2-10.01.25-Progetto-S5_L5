@@ -5,14 +5,9 @@
 }
 
 body {
-  /* font-family: "Roboto", sans-serif;
-  font-weight: 500; */
-  /* margin: auto; */
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif; /* Usa Roboto come font principale */
+  font-weight: 500;
   font-optical-sizing: auto;
-  /* font-weight: weight; */
-  /* font-style: normal; */
-  /* font-variation-settings: "wdth" 100; */
 }
 
 /*header nav {
@@ -90,6 +85,7 @@ main {
 
 .trending {
   padding: 1em;
+  padding-inline: 50px;
 }
 
 .container {
@@ -124,6 +120,7 @@ main {
 
 .title img {
   padding-right: 1em;
+  width: 40px;
 }
 
 .box2{
@@ -132,4 +129,47 @@ main {
 
 .date{
   color: #747577;
+}
+
+/* ARTICLE - SECONDA PARTE DELLA PAGINA */
+.article{
+  padding-inline: 50px;
+  display: flex;
+}
+.artSX{
+  max-width: 60%; /*LA COLONNA SINISTRA PRENDE MASSIMO IL 60% DELLA LARGHEZZA*/
+}
+
+.box3{
+  display: flex;
+}
+
+.post > img{
+  border-radius: 50%;
+}
+
+.post{
+  display: flex;
+  align-items: center;
+}
+
+.text > h3{
+  font-weight: 700;
+    font-size: 1.3em;
+}
+
+.text > p{
+  color: #747577;
+}
+
+.grey{
+  background-color: #e8e9eb;
+  border-radius: 25px;
+  border: none;
+  color: #747577;
+  
+}
+
+.artDX{
+  max-width: 40%;
 }
