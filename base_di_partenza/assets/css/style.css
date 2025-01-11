@@ -136,12 +136,14 @@ main {
   padding-inline: 50px;
   display: flex;
 }
+/*COLONNA SINSTRA*/
 .artSX{
   max-width: 60%; /*LA COLONNA SINISTRA PRENDE MASSIMO IL 60% DELLA LARGHEZZA*/
 }
 
 .box3{
   display: flex;
+  padding-block: 1.3em;
 }
 
 .post > img{
@@ -155,7 +157,7 @@ main {
 
 .text > h3{
   font-weight: 700;
-    font-size: 1.3em;
+  font-size: 1.3em;
 }
 
 .text > p{
@@ -167,9 +169,58 @@ main {
   border-radius: 25px;
   border: none;
   color: #747577;
-  
 }
 
+.placeholder img{
+  max-width: 150px;
+  background-size: cover;
+ 
+}
+
+/* .placeholder1{
+  background-image: url(../imgs/image08.jpeg);
+  width: 300px;
+}
+
+.placeholder2{
+  background-image: url(../imgs/image10.jpegq);
+  background-size: cover;
+  max-width: 300px;
+} */
+
+
+/*SECONDA COLONNA DESTRA*/
 .artDX{
   max-width: 40%;
+  padding-inline: 30px;
+}
+
+.artDX p{
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.artDX ul li{
+  list-style-type: none;
+  padding: 4px 3px;
+  color: #747577;
+}
+
+.discover{
+  display: flex;
+  flex-wrap: wrap;
+  padding-block: 1.3em;
+}
+
+.discover2{
+  padding-right: 1px;
+}
+
+.discover li button{
+  border-radius: 3px;
+  color: #747577;
+}
+
+.discover li button.grey:hover {
+  background-color: #aaa; /* Cambia colore al passaggio del mouse */
 }
