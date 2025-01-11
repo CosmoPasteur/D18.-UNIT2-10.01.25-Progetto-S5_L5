@@ -31,9 +31,10 @@ header h1 {
 
 header nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border-bottom: 1px solid #191919;
   padding-block: 4px;
+  padding-left: 100px;
 }
 
 /* LISTA MENU */
@@ -59,9 +60,10 @@ nav ul li {
 /* SECONDA PARTE DELL'HEADER */
 .header2 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   /* justify-content: space-around; */
   align-items: center;
+  padding-left: 100px;
   border-bottom: 1px solid #191919;
 }
 
@@ -85,7 +87,8 @@ main {
 
 .trending {
   padding: 1em;
-  padding-inline: 50px;
+  /* padding-inline: 50px; */
+  padding-inline: 100px;
 }
 
 .container {
@@ -129,12 +132,21 @@ main {
 
 .date{
   color: #747577;
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+
+.text .date{
+  color: #747577;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* ARTICLE - SECONDA PARTE DELLA PAGINA */
 .article{
-  padding-inline: 50px;
   display: flex;
+  /* padding-inline: 50px; */
+  padding-inline: 100px;
 }
 /*COLONNA SINSTRA*/
 .artSX{
@@ -143,6 +155,7 @@ main {
 
 .box3{
   display: flex;
+  justify-content: space-between;
   padding-block: 1.3em;
 }
 
@@ -177,18 +190,6 @@ main {
  
 }
 
-/* .placeholder1{
-  background-image: url(../imgs/image08.jpeg);
-  width: 300px;
-}
-
-.placeholder2{
-  background-image: url(../imgs/image10.jpegq);
-  background-size: cover;
-  max-width: 300px;
-} */
-
-
 /*SECONDA COLONNA DESTRA*/
 .artDX{
   max-width: 40%;
@@ -212,13 +213,15 @@ main {
   padding-block: 1.3em;
 }
 
-.discover2{
+/* .discover2{
   padding-right: 1px;
-}
+} */
 
 .discover li button{
   border-radius: 3px;
   color: #747577;
+  font-size: 1em;
+  border: gray;
 }
 
 .discover li button.grey:hover {
