@@ -10,9 +10,9 @@ body {
   /* margin: auto; */
   font-family: "Roboto", serif;
   font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+  /* font-weight: weight; */
+  /* font-style: normal; */
+  /* font-variation-settings: "wdth" 100; */
 }
 
 /*header nav {
@@ -22,7 +22,7 @@ body {
 /* FONT DELL'HEADER */
 header {
   font-family: "Spectral", serif;
-  font-weight: 400; /*normal*/
+  /* font-weight: 400; normal */
 
   background-color: #ffc017;
 }
@@ -83,10 +83,10 @@ nav ul li {
 }
 
 /* MAIN */
-/* main {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-} */
+main {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+}
 
 .trending {
   padding: 1em;
@@ -100,7 +100,12 @@ nav ul li {
 .box {
   width: 30%;
   display: flex;
+  margin-block: 1rem;
   /* flex-wrap: wrap; */
+}
+
+.h2{
+  font-weight: 700; Grassetto
 }
 
 .numb {
@@ -114,4 +119,17 @@ nav ul li {
 .title {
   display: flex;
   align-items: center;
+  padding-bottom: 0.7em;
+}
+
+.title img {
+  padding-right: 1em;
+}
+
+.box2{
+  display: grid;
+}
+
+.date{
+  color: #747577;
 }
