@@ -1,366 +1,444 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+@media screen and (max-width: 768px) {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+
+  /* FONT DELL'HEADER */
+  header {
+    font-family: "Spectral", serif;
+    background-color: #ffc017;
+  }
+
+  header h1 {
+    font-family: "Spectral", serif;
+    font-weight: 700;
+    font-size: 3em; /* Riduci la dimensione del titolo */
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #191919;
+    padding-block: 4px;
+    padding-left: 30px; /* Riduci il padding per i dispositivi più piccoli */
+  }
+
+  /* LISTA MENU */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li button {
+    background-color: #191919;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px; /* Riduci il margine tra i link */
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #191919;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #ffc017;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Colore della navbar quando viene scavalcato l'header */
+  nav.scrolled {
+    background-color: #e8e9eb;
+  }
+
+  .header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px; /* Riduci padding */
+    border-bottom: 1px solid #191919;
+  }
+
+  .headerSx p {
+    font-size: 1.2rem; /* Riduci la dimensione del testo */
+    padding-block: 2rem;
+  }
+
+  .headerSx button {
+    background-color: #191919;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 25px;
+  }
+
+  /* MAIN */
+  main {
+    font-family: "Roboto", serif;
+  }
+
+  .trending {
+    padding: 1em;
+    padding-inline: 50px; /* Riduci la larghezza del padding */
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra gli elementi */
+    gap: 15px;
+  }
+
+  .box {
+    width: calc(45%);
+    display: flex;
+    margin-block: 1rem;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  .numb {
+    color: #747577;
+    font-size: 1.5em; /* Riduci la dimensione del numero */
+    font-weight: bold;
+    opacity: 0.5;
+    padding-inline: 0.5em;
+  }
+
+  .title {
+    display: flex;
+  }
+
+  .title img {
+    padding-right: 1em;
+    width: 30px; /* Riduci la dimensione dell'immagine */
+  }
+
+  /* ARTICOLO */
+  .article {
+    display: flex;
+    flex-direction: column; /* Cambia disposizione per la versione mobile */
+    padding-inline: 30px;
+  }
+
+  /* COLONNA SINISTRA */
+  .artSX {
+    max-width: 100%; /* La colonna sinistra prende tutta la larghezza */
+  }
+
+  .box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: 1.3em;
+  }
+
+  .post > img {
+    width: 20px; /* Riduci la dimensione dell'immagine */
+  }
+
+  .date {
+    color: #747577;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .artDX {
+    max-width: 100%; /* La colonna destra prende tutta la larghezza */
+    padding-inline: 0;
+  }
+
+  .artDX p {
+    font-weight: normal; /* Riduci il peso del font */
+    font-size: 12px;
+  }
+
+  .discover {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra i bottoni */
+  }
+
+  .discover li button {
+    border-radius: 3px;
+    color: #747577;
+    font-size: 1em;
+    border: gray;
+    margin: 5px;
+  }
+
+  .discover li button.grey:hover {
+    background-color: #aaa;
+  }
 }
 
-body {
-  font-family: "Roboto", sans-serif; /* Usa Roboto come font principale */
-  font-weight: 500;
-  font-optical-sizing: auto;
-}
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
 
-/* FONT DELL'HEADER */
-header {
-  font-family: "Spectral", serif;
-  /* font-weight: 400; normal */
+@media screen and (min-width: 1200px) {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-  background-color: #ffc017;
-}
+  body {
+    font-family: "Roboto", sans-serif; /* Usa Roboto come font principale */
+    font-weight: 500;
+    font-optical-sizing: auto;
+  }
 
-/* FONT TITOLO HEADER */
-header h1 {
-  font-family: "Spectral", serif;
-  font-weight: 700; /* Grassetto */
-  font-size: 5em;
-}
+  /* FONT DELL'HEADER */
+  header {
+    font-family: "Spectral", serif;
+    /* font-weight: 400; normal */
 
-header nav {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #191919;
-  padding-block: 4px;
-  padding-left: 100px;
-}
+    background-color: #ffc017;
+  }
 
-/* LISTA MENU */
-nav ul {
-  list-style-type: none;
-  padding: 0; /* Rimuove il padding predefinito */
-  margin: 0; /* Rimuove il margine predefinito */
-}
+  /* FONT TITOLO HEADER */
+  header h1 {
+    font-family: "Spectral", serif;
+    font-weight: 700; /* Grassetto */
+    font-size: 5em;
+  }
 
-/* BOTTONE */
-nav ul li button {
-  background-color: #191919;
-  color: white;
-  border-radius: 25px;
-  padding: 10px 20px; /* Spaziatura per il bottone */
-}
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #191919;
+    padding-block: 4px;
+    padding-left: 100px;
+  }
 
-nav ul li {
-  display: inline-block; /* Allinea gli elementi sulla stessa riga */
-  margin-right: 20px; /* Aggiunge spazio tra gli elementi */
-}
+  /* LISTA MENU */
+  nav ul {
+    list-style-type: none;
+    padding: 0; /* Rimuove il padding predefinito */
+    margin: 0; /* Rimuove il margine predefinito */
+  }
 
-nav ul li a{
-  text-decoration: none;
-  color: #191919;
-}
+  /* BOTTONE */
+  nav ul li button {
+    background-color: #191919;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px; /* Spaziatura per il bottone */
+  }
 
-/*NavBar*/
-nav{
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  background-color: #ffc017;
-  transition: background-color 0.3s ease;
-}
-/* Colore della navbar quando viene scavalcato l'header */
-nav.scrolled {
-  background-color: #e8e9eb;  /* Cambia il colore quando l'utente scorre oltre l'header */
-}
+  nav ul li {
+    display: inline-block; /* Allinea gli elementi sulla stessa riga */
+    margin-right: 20px; /* Aggiunge spazio tra gli elementi */
+  }
 
-nav .menu li a button{
-  transition: background-color 0.3s ease, color 0.3s ease; 
-}
-nav.scrolled .menu li a button{
-  background-color: #1a8917;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+  nav ul li a {
+    text-decoration: none;
+    color: #191919;
+  }
 
-/* SECONDA PARTE DELL'HEADER */
-.header2 {
-  display: flex;
-  justify-content: space-between;
-  /* justify-content: space-around; */
-  align-items: center;
-  padding-left: 100px;
-  border-bottom: 1px solid #191919;
-}
-.header2 img{
-  background-color: #ffc017;
-}
-.headerSx p {
-  font-size: 1.35rem;
-  padding-block: 3rem;
-}
+  /*NavBar*/
+  nav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #ffc017;
+    transition: background-color 0.3s ease;
+  }
+  /* Colore della navbar quando viene scavalcato l'header */
+  nav.scrolled {
+    background-color: #e8e9eb; /* Cambia il colore quando l'utente scorre oltre l'header */
+  }
 
-.headerSx button {
-  background-color: #191919;
-  color: white;
-  border-radius: 25px;
-  padding: 10px 20px; /* Spaziatura per il bottone */
-}
+  nav .menu li a button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  nav.scrolled .menu li a button {
+    background-color: #1a8917;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 
-/* MAIN */
-main {
-  font-family: "Roboto", serif;
-  font-optical-sizing: auto;
-}
+  /* SECONDA PARTE DELL'HEADER */
+  .header2 {
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding-left: 100px;
+    border-bottom: 1px solid #191919;
+  }
+  .header2 img {
+    background-color: #ffc017;
+  }
+  .headerSx p {
+    font-size: 1.35rem;
+    padding-block: 3rem;
+  }
 
-.trending {
-  padding: 1em;
-  /* padding-inline: 50px; */
-  padding-inline: 100px;
-}
+  .headerSx button {
+    background-color: #191919;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 40px; /* Spaziatura per il bottone */
+  }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
+  /* MAIN */
+  main {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+  }
 
-.box {
-  width: calc(30%);
-  display: flex;
-  margin-block: 1rem;
-}
+  .trending {
+    padding: 1em;
+    /* padding-inline: 50px; */
+    padding-inline: 100px;
+  }
 
-.h2{
-  font-weight: 700; Grassetto
-}
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.numb {
-  color: #747577;
-  font-size: 2em;
-  font-weight: bold;
-  opacity: 0.5;
-  padding-inline: 0.5em;
-}
+  .box {
+    width: calc(30%);
+    display: flex;
+    margin-block: 1rem;
+  }
 
-.title {
-  display: flex;
-  align-items: center;
-  padding-bottom: 0.7em;
-}
+  .h2 {
+    font-weight: 700; /*Grassetto*/
+  }
 
-.title img {
-  padding-right: 1em;
-  width: 40px;
-}
+  .numb {
+    color: #747577;
+    font-size: 2em;
+    font-weight: bold;
+    opacity: 0.5;
+    padding-inline: 0.5em;
+  }
 
-.box2{
-  display: grid;
-}
+  .title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.7em;
+  }
 
-.date{
-  color: #747577;
-  padding-block: 10px;
-}
+  .title img {
+    padding-right: 1em;
+    width: 40px;
+  }
 
-.text .date{
-  color: #747577;
-  display: flex;
-  justify-content: space-between;
-}
+  .box2 {
+    display: grid;
+  }
 
-/* ARTICLE - SECONDA PARTE DELLA PAGINA */
-.article{
-  display: flex;
-  /* padding-inline: 50px; */
-  padding-inline: 100px;
-}
-/*COLONNA SINSTRA*/
-.artSX{
-  max-width: 60%; /*LA COLONNA SINISTRA PRENDE MASSIMO IL 60% DELLA LARGHEZZA*/
-}
+  .date {
+    color: #747577;
+    padding-block: 10px;
+  }
 
-.box3{
-  display: flex;
-  justify-content: space-between;
-  padding-block: 1.3em;
-}
+  .text .date {
+    color: #747577;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.post > img{
-  border-radius: 50%;
-  width: 25px;
-  padding-right: 0.5em;
-}
+  /* ARTICLE - SECONDA PARTE DELLA PAGINA */
+  .article {
+    display: flex;
+    /* padding-inline: 50px; */
+    padding-inline: 100px;
+  }
+  /*COLONNA SINSTRA*/
+  .artSX {
+    max-width: 60%; /*LA COLONNA SINISTRA PRENDE MASSIMO IL 60% DELLA LARGHEZZA*/
+  }
 
-.post{
-  display: flex;
-  align-items: center;
-  margin-bottom: 7px;
-}
+  .box3 {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1.3em;
+  }
 
-.text > h3{
-  font-weight: 700;
-  font-size: 1.3em;
-  margin-bottom: 0.5rem;
-}
+  .post > img {
+    border-radius: 50%;
+    width: 25px;
+  }
 
-.text > p{
-  color: #747577;
-}
+  .post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+  }
 
-.grey{
-  background-color: #e8e9eb;
-  border-radius: 25px;
-  border: none;
-  color: #747577;
-}
+  .text > h3 {
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-bottom: 0.5rem;
+  }
 
-.placeholder img{
-  max-width: 150px;
-  background-size: cover;
- 
-}
+  .text > p {
+    color: #747577;
+  }
 
-/*SECONDA COLONNA DESTRA*/
-.artDX{
-  max-width: 40%;
-  padding-inline: 30px;
-}
+  .grey {
+    background-color: #e8e9eb;
+    border-radius: 25px;
+    border: none;
+    color: #747577;
+  }
 
-.artDX p{
-  font-weight: bold;
-  font-size: 12px;
-}
+  .placeholder img {
+    max-width: 150px;
+    background-size: cover;
+  }
 
-.artDX ul li{
-  list-style-type: none;
-  padding: 4px 3px;
-  color: #747577;
-}
+  /*SECONDA COLONNA DESTRA*/
+  .artDX {
+    max-width: 40%;
+    padding-inline: 30px;
+  }
 
-.discover{
-  display: flex;
-  flex-wrap: wrap;
-  padding-block: 1.3em;
-}
+  .artDX p {
+    font-weight: bold;
+    font-size: 12px;
+  }
 
-/* .discover2{
-  padding-right: 1px;
-} */
+  .artDX ul li {
+    list-style-type: none;
+    padding: 4px 3px;
+    color: #747577;
+  }
 
-.discover li button{
-  border-radius: 3px;
-  color: #747577;
-  font-size: 1em;
-  border: gray;
-}
+  .discover {
+    display: flex;
+    flex-wrap: wrap;
+    padding-block: 1.3em;
+  }
 
-.discover li button.grey:hover {
-  background-color: #aaa; /* Cambia colore al passaggio del mouse */
-}
+  .discover li button {
+    border-radius: 3px;
+    color: #747577;
+    font-size: 1em;
+    border: gray;
+  }
 
-/*------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------*/
-
-/* MEDIA QUERIES PER MOBILE */
-@media screen /*and (min-width: 480px)*/ and (max-width: 768px) {
-
-/*Adattare l'Header*/
-header{
-  font-size: 1.2em; /* Riduce la dimensione del font dell'header */
-  padding-left: 20px; /* Riduce il padding a sinistra */
-} 
-
-/* Font titolo header */
-header h1 {
-  font-size: 3em; /* Ridurre la dimensione del font per il titolo */
-}
-
-/* Adatta la nav */
-header nav {
-  padding-left: 20px;  /* Ridurre il padding a sinistra */
-  padding-right: 20px; /* Agg. un po' di padding a destra */
-  justify-content: space-between; /* Mantiene lo spazio tra logo e menu */
-}
-
-/* Lista del menu */
-nav{
-  width: auto;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-between; /* Spazio tra gli elementi */
-  align-items: center; /*Centra testo*/
-}
-
-nav ul li {
-  font-size: 1.1rem; /* Ridurre la dimensione del font per gli elementi del menu */
-}
-
-/* Modifica il bottone */
-nav ul li button {
-  padding: 8px 15px; /* Ridurre la spaziatura del bottone per risparmiare spazio */
-  font-size: 1rem; /* Ridurre la dimensione del font del bottone */
-}
-
-/* Seconda parte dell'header */
-.header2 {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; /* Allinea gli elementi al centro */
-  padding-left: 20px; /* Ridurre il padding a sinistra */
-  padding-right: 20px; /* Aggiungere padding a destra */
-}
-
-.header2 img{
-  height: auto;
-  object-fit: cover;
-  transform: translateX(60px);
-  width: 150%; /* Aumenta la larghezza dell'immagine per ingrandirla */
-  max-width: none; /* Rimuovi eventuali limiti sulla larghezza */
-}
-
-/* Modifica la dimensione del font nella seconda parte */
-.headerSx h1{
-  white-space: nowrap;
-}
-.headerSx p {
-  font-size: 1.1rem; /* Ridurre la dimensione del testo */
-  padding-block: 2rem; /* Ridurre lo spazio verticale */
-}
-
-.headerSx button {
-  padding: 8px 15px; /* Ridurre la spaziatura del bottone */
-  font-size: 1rem; /* Ridurre la dimensione del font */
-}
-/*Inizio MAIN*/
-/*trending*/
-
-.container{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-}
-
-.numb{
-  padding: 0.5em;
-}
-
-.box{
-  width: calc(45%);
-  display: flex;
-  margin-block: 1rem;
-  flex-direction: row;
-  margin-bottom: 20px;
-}
-
-.date{
-  display: flex;
-  justify-content: space-between;
-}
-
-.article{
-  display: flex;
-  flex-direction: column-reverse;
-  padding-inline: 50px;
-
-}
+  .discover li button.grey:hover {
+    background-color: #aaa; /* Cambia colore al passaggio del mouse */
+  }
 }
