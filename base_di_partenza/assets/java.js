@@ -1,11 +1,28 @@
+// const navbar = document.getElementById("navbar");
+
+// // Funzione per aggiungere o rimuovere la classe 'scrolled' alla navbar
+// window.onscroll = function () {
+//   if (window.scrollY > 50) {
+//     // Quando si scorre oltre 50px (puoi modificare questo valore)
+//     navbar.classList.add("scrolled"); // Aggiungi la classe che cambia il colore
+//   } else {
+//     navbar.classList.remove("scrolled"); // Rimuovi la classe se l'utente torna in cima
+//   }
+// };
+
 const navbar = document.getElementById("navbar");
+const header = document.querySelector("header");
 
 // Funzione per aggiungere o rimuovere la classe 'scrolled' alla navbar
 window.onscroll = function () {
-  if (window.scrollY > 50) {
-    // Quando si scorre oltre 50px (puoi modificare questo valore)
-    navbar.classList.add("scrolled"); // Aggiungi la classe che cambia il colore
+  // Ottieni la posizione dell'header
+  const headerBottom = header.getBoundingClientRect().bottom;
+
+  // Cambia il colore della navbar appena l'utente è quasi alla fine dell'header
+  if (headerBottom <= 0) {
+    // Quando la fine dell'header è fuori dalla vista
+    navbar.classList.add("scrolled"); // Aggiungi la classe 'scrolled'
   } else {
-    navbar.classList.remove("scrolled"); // Rimuovi la classe se l'utente torna in cima
+    navbar.classList.remove("scrolled"); // Rimuovi la classe 'scrolled' se è ancora visibile
   }
 };
