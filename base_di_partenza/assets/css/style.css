@@ -1,3 +1,67 @@
+@media screen and (max-width: 480px) {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  /* FONT DELL'HEADER */
+  header {
+    font-family: "Spectral", serif;
+    background-color: #ffc017;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  #navbar .menu li {
+    display: none; /* Nasconde tutti gli <li> */
+  }
+
+  #navbar .menu li:nth-last-child(1),
+  #navbar .menu li:nth-last-child(2) {
+    display: block; /* Mostra solo gli ultimi due <li> */
+  }
+
+  #navbar img {
+  }
+
+  .headerSx {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mmm {
+    display: none;
+  }
+  /* MAIN */
+  main {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    padding: 10px; /* Ridotto padding per mobile */
+  }
+  .trending {
+    padding: 1em;
+    padding-inline: 20px; /* Ridotto padding per mobile */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .box {
+    width: 100%; /* Le box occupano tutta la larghezza disponibile */
+    margin-bottom: 1rem;
+  }
+}
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   *,
   *::before,
