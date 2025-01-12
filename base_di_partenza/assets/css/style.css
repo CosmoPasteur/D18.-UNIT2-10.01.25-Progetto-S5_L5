@@ -89,7 +89,9 @@ nav.scrolled .menu li a button{
   padding-left: 100px;
   border-bottom: 1px solid #191919;
 }
-
+.header2 img{
+  background-color: #ffc017;
+}
 .headerSx p {
   font-size: 1.35rem;
   padding-block: 3rem;
@@ -253,6 +255,8 @@ main {
   background-color: #aaa; /* Cambia colore al passaggio del mouse */
 }
 
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
 
 /* MEDIA QUERIES PER MOBILE */
 @media screen /*and (min-width: 480px)*/ and (max-width: 768px) {
@@ -276,6 +280,10 @@ header nav {
 }
 
 /* Lista del menu */
+nav{
+  width: auto;
+}
+
 nav ul {
   display: flex;
   justify-content: space-between; /* Spazio tra gli elementi */
@@ -324,9 +332,6 @@ nav ul li button {
 }
 /*Inizio MAIN*/
 /*trending*/
-.trending{
-
-}
 
 .container{
   display: flex;
@@ -350,5 +355,12 @@ nav ul li button {
 .date{
   display: flex;
   justify-content: space-between;
+}
+
+.article{
+  display: flex;
+  flex-direction: column-reverse;
+  padding-inline: 50px;
+
 }
 }
