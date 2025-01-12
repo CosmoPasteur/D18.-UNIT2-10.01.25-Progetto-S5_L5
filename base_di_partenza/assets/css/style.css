@@ -29,6 +29,14 @@
     padding-left: 30px; /* Riduci il padding per i dispositivi più piccoli */
   }
 
+  nav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #ffc017;
+    transition: background-color 0.3s ease;
+  }
   /* LISTA MENU */
   nav ul {
     list-style-type: none;
@@ -51,15 +59,6 @@
   nav ul li a {
     text-decoration: none;
     color: #191919;
-  }
-
-  nav {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    background-color: #ffc017;
-    transition: background-color 0.3s ease;
   }
 
   /* Colore della navbar quando viene scavalcato l'header */
@@ -122,17 +121,28 @@
 
   .title {
     display: flex;
+    color: #191919;
   }
 
   .title img {
-    padding-right: 1em;
-    width: 30px; /* Riduci la dimensione dell'immagine */
+    border-radius: 50%;
+    width: 1.4rem;
+  }
+  .title h3 {
+    padding-inline: 1em;
+    font-size: 0.8em;
+  }
+  .box2 h2 {
+    padding-block: 0.5rem;
+  }
+  .inGrey {
+    color: #747577;
   }
 
   /* ARTICOLO */
   .article {
     display: flex;
-    flex-direction: column; /* Cambia disposizione per la versione mobile */
+    flex-direction: column-reverse; /* Cambia disposizione per la versione mobile */
     padding-inline: 30px;
   }
 
@@ -143,9 +153,24 @@
 
   .box3 {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     padding-block: 1.3em;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .placeholder img {
+    max-width: 150px;
+    background-size: cover;
+  }
+
+  .grey {
+    background-color: #e8e9eb;
+    border-radius: 25px;
+    border: none;
+    color: #747577;
   }
 
   .post > img {
@@ -168,10 +193,16 @@
     font-size: 12px;
   }
 
+  .discover3 p {
+    font-weight: bold;
+  }
+
   .discover {
+    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centra i bottoni */
+    justify-content: flex-start;
+    padding-block: 0.8rem;
   }
 
   .discover li button {
@@ -184,6 +215,17 @@
 
   .discover li button.grey:hover {
     background-color: #aaa;
+  }
+
+  .discover2 {
+    color: #747577;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .discover2 li {
+    margin-inline: 0.5rem;
   }
 }
 
