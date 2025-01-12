@@ -352,6 +352,10 @@
     padding-block: 10px;
   }
 
+  .text {
+    width: 100%;
+  }
+
   .text .date {
     color: #747577;
     display: flex;
