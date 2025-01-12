@@ -190,7 +190,7 @@
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   *,
   *::before,
   *::after {
@@ -440,5 +440,14 @@
 
   .discover li button.grey:hover {
     background-color: #aaa; /* Cambia colore al passaggio del mouse */
+  }
+
+  .discover3 {
+    position: sticky;
+    top: 60px;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 }

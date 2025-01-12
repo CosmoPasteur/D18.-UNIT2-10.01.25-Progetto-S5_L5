@@ -26,3 +26,9 @@ window.onscroll = function () {
     navbar.classList.remove("scrolled"); // Rimuovi la classe 'scrolled' se è ancora visibile
   }
 };
+
+window.addEventListener("load", function () {
+  const navbarHeight = document.querySelector(".navbar").offsetHeight;
+  const discover3 = document.querySelector(".discover3");
+  discover3.style.marginTop = navbarHeight + "px";
+});
