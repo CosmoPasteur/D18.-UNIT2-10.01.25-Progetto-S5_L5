@@ -79,6 +79,7 @@ nav.scrolled .menu li a button{
   background-color: #1a8917;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 /* SECONDA PARTE DELL'HEADER */
 .header2 {
   display: flex;
