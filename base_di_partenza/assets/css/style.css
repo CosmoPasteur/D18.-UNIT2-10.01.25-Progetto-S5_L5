@@ -10,10 +10,6 @@ body {
   font-optical-sizing: auto;
 }
 
-/*header nav {
-  display: flex;
-} */
-
 /* FONT DELL'HEADER */
 header {
   font-family: "Spectral", serif;
@@ -57,6 +53,22 @@ nav ul li {
   margin-right: 20px; /* Aggiunge spazio tra gli elementi */
 }
 
+nav ul li a{
+  text-decoration: none;
+  color: #191919;
+}
+
+/*NavBar*/
+nav{
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #ffc017;
+}
+/* Logo della navbar */
+
+
 /* SECONDA PARTE DELL'HEADER */
 .header2 {
   display: flex;
@@ -97,10 +109,9 @@ main {
 }
 
 .box {
-  width: 30%;
+  width: calc(30%);
   display: flex;
   margin-block: 1rem;
-  /* flex-wrap: wrap; */
 }
 
 .h2{
@@ -112,7 +123,7 @@ main {
   font-size: 2em;
   font-weight: bold;
   opacity: 0.5;
-  padding-inline: 1em;
+  padding-inline: 0.5em;
 }
 
 .title {
@@ -132,8 +143,7 @@ main {
 
 .date{
   color: #747577;
-  /* display: flex; */
-  /* justify-content: space-between; */
+  padding-block: 10px;
 }
 
 .text .date{
@@ -162,16 +172,19 @@ main {
 .post > img{
   border-radius: 50%;
   width: 25px;
+  padding-right: 0.5em;
 }
 
 .post{
   display: flex;
   align-items: center;
+  margin-bottom: 7px;
 }
 
 .text > h3{
   font-weight: 700;
   font-size: 1.3em;
+  margin-bottom: 0.5rem;
 }
 
 .text > p{
@@ -227,4 +240,104 @@ main {
 
 .discover li button.grey:hover {
   background-color: #aaa; /* Cambia colore al passaggio del mouse */
+}
+
+
+/* MEDIA QUERIES PER MOBILE */
+@media screen /*and (min-width: 480px)*/ and (max-width: 768px) {
+
+/*Adattare l'Header*/
+header{
+  font-size: 1.2em; /* Riduce la dimensione del font dell'header */
+  padding-left: 20px; /* Riduce il padding a sinistra */
+} 
+
+/* Font titolo header */
+header h1 {
+  font-size: 3em; /* Ridurre la dimensione del font per il titolo */
+}
+
+/* Adatta la nav */
+header nav {
+  padding-left: 20px;  /* Ridurre il padding a sinistra */
+  padding-right: 20px; /* Agg. un po' di padding a destra */
+  justify-content: space-between; /* Mantiene lo spazio tra logo e menu */
+}
+
+/* Lista del menu */
+nav ul {
+  display: flex;
+  justify-content: space-between; /* Spazio tra gli elementi */
+  align-items: center; /*Centra testo*/
+}
+
+nav ul li {
+  font-size: 1.1rem; /* Ridurre la dimensione del font per gli elementi del menu */
+}
+
+/* Modifica il bottone */
+nav ul li button {
+  padding: 8px 15px; /* Ridurre la spaziatura del bottone per risparmiare spazio */
+  font-size: 1rem; /* Ridurre la dimensione del font del bottone */
+}
+
+/* Seconda parte dell'header */
+.header2 {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* Allinea gli elementi al centro */
+  padding-left: 20px; /* Ridurre il padding a sinistra */
+  padding-right: 20px; /* Aggiungere padding a destra */
+}
+
+.header2 img{
+  height: auto;
+  object-fit: cover;
+  transform: translateX(60px);
+  width: 150%; /* Aumenta la larghezza dell'immagine per ingrandirla */
+  max-width: none; /* Rimuovi eventuali limiti sulla larghezza */
+}
+
+/* Modifica la dimensione del font nella seconda parte */
+.headerSx h1{
+  white-space: nowrap;
+}
+.headerSx p {
+  font-size: 1.1rem; /* Ridurre la dimensione del testo */
+  padding-block: 2rem; /* Ridurre lo spazio verticale */
+}
+
+.headerSx button {
+  padding: 8px 15px; /* Ridurre la spaziatura del bottone */
+  font-size: 1rem; /* Ridurre la dimensione del font */
+}
+/*Inizio MAIN*/
+/*trending*/
+.trending{
+
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.numb{
+  padding: 0.5em;
+}
+
+.box{
+  width: calc(45%);
+  display: flex;
+  margin-block: 1rem;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.date{
+  display: flex;
+  justify-content: space-between;
+}
 }
