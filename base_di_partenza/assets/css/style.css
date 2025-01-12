@@ -65,10 +65,20 @@ nav{
   z-index: 1000;
   width: 100%;
   background-color: #ffc017;
+  transition: background-color 0.3s ease;
 }
-/* Logo della navbar */
+/* Colore della navbar quando viene scavalcato l'header */
+nav.scrolled {
+  background-color: #e8e9eb;  /* Cambia il colore quando l'utente scorre oltre l'header */
+}
 
-
+nav .menu li a button{
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+nav.scrolled .menu li a button{
+  background-color: #1a8917;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 /* SECONDA PARTE DELL'HEADER */
 .header2 {
   display: flex;
